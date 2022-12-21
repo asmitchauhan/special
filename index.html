@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARNING!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="button-div">
+        <a href="#" onclick="playVid()">DON'T CLICK!</a>
+    </div>
+
+    <div class="video-div" id="video-div">
+        <video id="video" width="100%" controls>
+            <source src="rick-roll.mp4" type="video/mp4">
+        </video>
+        <script>
+            var vid = document.getElementById("video");
+    
+            function playVid() {
+                vid.play();
+                document.getElementById("text-div").style.opacity = "1"
+                document.getElementById("video-div").style.opacity = "1"
+            }
+        </script>
+    </div>
+    <div class="text-div" id="text-div">
+        <marquee direction="left">YOU HAVE BEEN RICK ROLLED MF</marquee>
+    </div>
+</body>
+
+</html>
